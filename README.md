@@ -28,8 +28,8 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|email|string|null: false|
-|name|string|null: false|
+|email|string|null: false, unique: true|
+|name|string|null: false, add_index: true|
 ### Association
 - has_many :messages
 - has_many :groups, through: :users_groups
